@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous"> 
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link rel="icon" href="images/gameShop-banner.png">
+        <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/indexStyle.css">
+        <title> گیفت کارت ها </title>
+    </head>
+
+    <body>
+        <header>
+            <!-- ایجا نوبار با استفاده از بوت استرپ و سی اس اس -->
+            <nav class="navbar navbar-expand-md navbar-light bg-primary bg-gradient fixed-top">
+                <div class="container-fluid">
+
+                    <!-- ایجاد یک ایکون برای سبد خرید -->
+                    <div class="nav-item d-md-flex">
+                        <a href="#" class="navbar-brand ms-md-3 mb-md-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <img src="images/basket.png" alt="game brand" width="50px" height="45px">
+                        </a>
+                    </div>
+                                        
+                    <!-- ایجاد گزینه ی ورود و ثبت نام -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link mb-2 signIn" aria-current="page" href="sigIn.html"> ثبت نام  <a href="logIn.html" class="nav-link mb-2 p-0 logIn"> /ورود </a>
+                        </a>
+                        </li>
+                    </ul>
+                    
+                    <!-- ایجاد دکمه ی همبرگری -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" data-hover="dropdown">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+                            <!-- ایجا دگزینه های صفحه اصلی و اخبار در حالت صفحات کوچک تر -->
+                            <li class="nav-item">
+                                <a class="nav-link d-flex d-md-none" href="index.html"> صفحه اصلی </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link d-flex d-md-none" href="#"> اخبار </a>
+                            </li>
+
+                            <!-- گزینه دراپ دان دسته بندی ها -->
+                            <li class="dropdowns">
+                                <button class="dropbtn mb-2"> فروشگاه </button>
+                                <div class="dropdown-content">
+                                  <a href="consoleCard.html">گیم های کنسول</a>
+                                  <a href="steamGame.html"> گیم های استیم </a>
+                                  <a href="giftCart.html"> گیفت کارت </a>
+                                </div>
+                            </li>
+
+                            <!-- ایجا دگزینه های صفحه اصلی و اخبار -->
+                            <li class="nav-item">
+                                <a class="nav-link d-none d-md-flex ms-3" href="#"> اخبار </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link d-none d-md-flex ms-3" href="index.html"> صفحه اصلی </a>
+                            </li>
+
+                            <!-- ایجاد ایکون سایت -->
+                            <li class="nav-item">
+                                <a href="index.html" class="navbar-brand d-none d-md-flex mb-md-2">
+                                    <img src="images/gameShop-banner.png" alt="game brand" width="50px" height="45px">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>        
+            </nav>
+
+            <!-- مربوط به ایکون خرید و باز شن پنجره ی سبد خرید -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel"> سبد خرید </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body text-start fw-bold fs-5">
+                سبد خرید شما خالی است
+                </div>
+            </div>
+   
+            <!-- ایجاد یک تصویر ثابت برای صفحه گیفت کارت ها -->
+            <div id="carouselSlide" class="carousel slide" data-bs-ride="carousel" data-interval="-1">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="overlay-image" style="background-image: url('images/all-gift-cards.png');"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ایجاد گزینه جست و جو -->
+        <section class="navbar navbar-expand-lg mt-3 mb-3" dir="rtl">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="جستجوی گیفت کارت ها" aria-label="Search">
+                    <button class="btn btn-primary" type="button"> جستجو </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- اولین بخش صفحه درباره فروش گیفت کارت ها -->
+        <section class="container-fluid">
+            <div class="card mb-3 mt-4">
+                <img src="images/steam-gift-card.png" class="card-img-top" alt="..." width="250px" height="400px">
+                <div class="card-body">
+                  <h5 class="card-title text-start text-danger"> 200.000 ~ 6.000.000 T </h5>
+                  <p class="card-text text-start mt-3 mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد</p>
+                  <a href="#" class="btn btn-success bg-gradient w-75 m-auto d-grid gap-2 col-6">  Steam  خرید گیفت کارت</a>
+                </div>
+            </div>
+            <div class="card mb-3 mt-4">
+                <img src="images/PlayStation-Card.jpg" class="card-img-top" alt="..." width="250px" height="400px">
+                <div class="card-body">
+                  <h5 class="card-title text-start text-danger"> 400.000 ~ 3.500.000 T </h5>
+                  <p class="card-text text-start mt-3 mb-4">با خرید گیفت کارت پلی استیشن شما می توانید اکانت خود را با مبلغی شارژ کنید. شبکه پلی استیشن (PSN) بهترین سرویس برای همه کسانی است که مایل به خرید بازی های ویدئویی هستند. دسترسی به انواع مختلف سرگرمی در کنسول های سونی و سایر دستگاه ها</p>
+                  <a href="#" class="btn btn-success bg-gradient w-75 m-auto d-grid gap-2 col-6">  Playstation  خرید گیفت کارت</a>
+                </div>
+            </div>
+            <div class="card mb-3 mt-4">
+                <img src="images/xbox-gift-card.jpg" class="card-img-top" alt="..." width="250px" height="400px">
+                <div class="card-body">
+                  <h5 class="card-title text-start text-danger"> 400.000 ~ 3.500.000 T </h5>
+                  <p class="card-text text-start mt-3 mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد</p>
+                  <a href="#" class="btn btn-success bg-gradient w-75 m-auto d-grid gap-2 col-6">  Xbox  خرید گیفت کارت</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="images/xbox-card.jpg" class="card-img-top" alt="..." width="250px" height="400px">
+                <div class="card-body">
+                  <h5 class="card-title text-start text-danger"> 400.000 ~ 2.100.000 T </h5>
+                  <p class="card-text text-start mt-3 mb-4">
+                    بهره مند خواهید شد EA,Bethesda با خرید گیم پس برای ایکس باکس از صد ها بازی بزرگ روز دنیا,بازی های انحصاری ایکس باکس در روز عرضه,بازی ها شرکت های 
+                  </p>
+                  <a href="#" class="btn btn-success bg-gradient w-75 m-auto d-grid gap-2 col-6">  Xbox  خرید گیم پس</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="images/playstation-plus.jpg" class="card-img-top" alt="..." width="250px" height="400px">
+                <div class="card-body">
+                  <h5 class="card-title text-start text-danger"> 550.000 ~ 2.600.000 T </h5>
+                  <p class="card-text text-start mt-3 mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد</p>
+                  <a href="#" class="btn btn-success bg-gradient w-75 m-auto d-grid gap-2 col-6"> Playstation خرید اشتراک </a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="images/Genshin.png" class="card-img-top" alt="..." width="250px" height="400px">
+                <div class="card-body">
+                  <h5 class="card-title text-start text-danger"> 300.000 ~ 6.500.000 T </h5>
+                  <p class="card-text text-start mt-3 mb-4">
+                    مانند همه ی بازی هایی که امتیاز دارند در گنشین ایمپکت نیز از این قانون پیروری میکند و شما میتوانید با خرج کردن کریستال کارکتر های درون بازی و سلاح و کلی موارد دیگر را بدست اورید همچنین شما با اولین خرید خود 4000 کریستال رایگان به صورت کامل قانونی از سایت ما به عنوان هدیه دریافت خواهید کرد
+                  </p>
+                  <a href="#" class="btn btn-success bg-gradient w-75 m-auto d-grid gap-2 col-6"> خرید کریستال گنشین ایمپکت </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- گزینه ای برای رفتن به صفحه قبل و بعد -->
+          <section dir="rtl">
+            <ul class="pagination d-flex justify-content-center align-items-center">
+              <li class="page-item disabled">
+                <span class="page-link"> بعدی </span>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item disabled">
+                <a class="page-link" href="#"> قبلی </a>
+              </li>
+            </ul>
+          </section>
+
+        <!-- فوتر و بخش پایانی سایت -->
+        <footer class="bg-dark bg-gradient text-dark pt-5 pb-4 mt-5">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-3 mx-auto mt-3">
+                        <h5 class="mb-4 font-wight-bold text-warning"> راه های ارتباطی </h5>
+                        <p>
+                            <a class="text-white"> game.io@gmail.com:ایمیل </a>
+                          </p>
+                          <p>
+                            <a class="text-white"> 09217045099:شماره تماس </a>
+                          </p>
+                          <p>
+                            <a href="https://t.me/mersad_hossini" class="text-white mb-2"> <i class="fa fa-telegram ms-1" style="font-size: 20px;"></i> :تلگرام </a>
+                          </p>
+                          <p>
+                            <a href="https://instagram.com/mersad__hosseini" class="text-white mb-2"> <i class="fa fa-instagram ms-1" style="font-size: 20px;"></i> :اینستاگرام </a>
+                          </p>
+                    </div>
+                    <div class="col-md-3 mx-auto mt-3">
+                        <h4 class="mb-4 font-wight-bold text-warning"> ساعت کاری </h4>
+                        <p class="text-white"> تماس با پشتیبانی7 روز هفته / ساعت 11 الی 22</p>
+                        <p> <a href="#" class="info text-white"> فروش گیم های شما </a> </p>
+                    </div>
+                    <div class="col-md-3 mx-auto mt-3">
+                        <h4 class="mb-4 font-wight-bold text-warning"> دسترسی سریع </h4>
+                        <p> <a href="#" class="info text-white"> پشتیبانی </a> </p>
+                        <p> <a href="user-dasbord.html" class="info text-white"> ناحیه کاربری </a> </p>
+                        <p> <a href="#" class="info text-white"> تخفیفات ویژه </a> </p>
+
+                    </div>
+                    <div class="col-md-3 mx-auto mt-3">
+                        <h4 class="mb-4 font-wight-bold text-warning"> Game.io وبسایت </h4>
+                        <p class="text-white"> با پشتیبانی سریع در خدمت شما دوستان عزیز میباشیم همچنین به مناسبت افتتاح سایت تمامی گیم های روز عرضه به مدت یک سال با 20% تخفیف میباشدند فقط کافیست برای گرفتن کد تخفیف وارد کانال تلگرام ما شوید </p>
+                    </div>
+                </div>
+                <hr class="text-white">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-md-7 col-lg-8">
+                    <p class="text-white">
+                        .تمامی حقوق مادی و معنوی این سایت محفوظ می باشد
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>

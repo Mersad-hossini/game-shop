@@ -1,0 +1,230 @@
+/* * کلاس و تگ های کلی */
+
+* { 
+    font-family: 'Rubik', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* *‌ تغییرات در نوبار و بعضی مقادیر بوت استرپ در حالت ریسپانسیو */
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+ul.navbar-nav {
+    padding: 0;
+    display: flex;
+    align-items: end;
+    margin-top: 8px;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-left: 15px;
+}
+
+/* *‌ ایجاد تغییرات در دراپ دان و دکمه */
+
+.dropdowns {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdowns .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 27px;
+    background-color: inherit;
+    margin: 0;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 220;
+    height: 144px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content > a:nth-child(1) {
+    text-align: right;
+    padding-left: 15px;
+}
+
+.dropdown-content > a:nth-child(2) {
+    padding-left: 21px;
+}
+
+.dropdown-content > a:nth-child(3) {
+    padding-left: 45px;
+}
+
+/* *‌ رنگ برای پس زمینه دراپ دان */
+
+.topnav a, .dropdowns .dropbtn {
+    transition: .5s;
+}
+
+.topnav a:hover, .dropdowns:hover .dropbtn {
+    color: black;
+}
+
+/* * رنگ برای هر کدام از گزینه های دراپ دان */
+
+.dropdown-content a:nth-child(1):hover {
+    background-color: #1a52ec;
+    color: white;
+}
+
+.dropdown-content a:nth-child(2):hover {
+    background-color: rgb(31, 153, 7);
+    color: white;
+}
+
+.dropdown-content a:nth-child(3):hover {
+    background-color: black;
+    color: white;
+}
+
+/* * ظاهر شدن دراپ دان و سایز و راست چین شدن دراپ دان */
+
+.dropdowns:hover .dropdown-content {
+    display: block;
+}
+
+button.dropbtn {
+    font-size: 20px;
+}
+  
+li.dropdowns {
+    float: right;
+}
+
+/* * سایر ایتم های نوبار(صفحه اصلی,اخبار,ورود و ثبت نام) */
+
+.nav-item > a {
+    margin-bottom: 13px;
+    font-size: 20px;
+    color: white;
+    transition: .5s;
+    padding-right: 10px;
+}
+
+.nav-item > .signIn, .nav-item > .logIn {
+    margin-bottom: 50px;
+    font-size: 20px;
+    display: inline-block;
+    transition: .5s;
+}
+
+.nav-item > .signIn:hover, .nav-item > .logIn:hover {
+    color: black;
+}
+
+a.nav-link:nth-child(3) {
+    color: chocolate;
+}
+
+/* * ایجاد اسلایدر در هدر سایت با بوت استرپ و ایجاد چند تغییرات کوچیک سی اس اس  */
+
+.carousel-item {
+    height: 32.5rem;
+    background-color: #000;
+    position: relative;
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+/* * (section) اولین و دومین بخش سایت */
+
+section > h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+section > a {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    color: rgb(18, 177, 18);
+    transition: .3s;
+}
+
+section > a > img {
+    margin-left: 10px;
+}
+
+section > a:hover {
+    color: #1a52ec;
+}
+
+section > .arrow {
+    color: #1a52ec
+}
+
+section > .arrow:hover {
+    color: rgb(18, 177, 18)
+}
+
+footer > p, .info {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+}
+
+/* * ریسپانسیو دراپ دان برای سایز های کوچگ تر از 768  */
+
+@media screen and (max-width: 768px) {
+    .topnav.responsive .dropdowns {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdowns .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .nav-item > a {
+        margin: 0;
+        padding: 12px 27px;
+    }
+
+    .nav-item > .signIn,.nav-item > .logIn {
+        padding: 5px 3px;
+        margin-top: 8px;
+    }
+}

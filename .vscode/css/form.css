@@ -1,0 +1,166 @@
+/* * کلاس و تگ های کلی */
+
+body {
+    background-color: #ececec;
+    direction: rtl;
+}
+
+* { 
+    font-family: 'Rubik', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.wrapper {
+    background-color: #ececec;
+    padding: 0px 20px 0px 20px;
+}
+
+.row {
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.side-image {
+    /* background-image: url('../images/game-shop.jpg'); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.brand {
+    margin-bottom: 13px;
+    font-size: 20px;
+    color: white;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+}
+
+.input-box {
+    width: 330px;
+    box-sizing: border-box;
+}
+
+.input-box h3 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0px 10px 0px 10px;
+}
+
+.input {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-field .input:focus ~ label {
+    top: -10px;
+    font-size: 13px;
+}
+
+.input-field .input:valid ~ label {
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+
+.input-field .input:focus , .input-field .input:valid {
+    border-bottom: 1px solid #743ae1;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    height: 45px;
+    background-color: #ececec;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.submit:hover {
+    background: rgba(37, 95, 156, 0.9);
+    color: #fff;
+}
+
+.sign-in {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.forget-pass {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+span a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+
+span a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+    .side-image {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .row {
+        max-width: 420px;
+        width: 100%;
+        height: 550px;
+    }
+}

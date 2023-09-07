@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous"> 
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link rel="icon" href="images/gameShop-banner.png">
+        <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/dasbord.css">
+        <link rel="stylesheet" href="css/indexStyle.css">
+        <title> ناحیه کاربری </title>
+    </head>
+
+    <body>
+        <!-- ایجا نوبار با استفاده از بوت استرپ و سی اس اس -->
+        <nav class="navbar navbar-expand-md navbar-light bg-primary bg-gradient fixed-top">
+            <div class="container-fluid">
+
+                <!-- ایجاد یک ایکون برای سبد خرید -->
+                <div class="nav-item d-md-flex">
+                    <a href="#" class="navbar-brand ms-md-3 mb-md-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <img src="images/basket.png" alt="game brand" width="50px" height="45px">
+                    </a>
+                </div>
+                                        
+                <!-- ایجاد گزینه ی ورود و ثبت نام -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link mb-2 signIn" aria-current="page" href="sigIn.html"> ثبت نام  <a href="logIn.html" class="nav-link mb-2 p-0 logIn"> /ورود </a>
+                        </a>
+                    </li>
+                </ul>
+                    
+                <!-- ایجاد دکمه ی همبرگری -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" data-hover="dropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+                        <!-- ایجا دگزینه های صفحه اصلی و اخبار در حالت صفحات کوچک تر -->
+                        <li class="nav-item">
+                            <a class="nav-link d-flex d-md-none" href="index.html"> صفحه اصلی </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link d-flex d-md-none" href="#"> اخبار </a>
+                        </li>
+
+                        <!-- گزینه دراپ دان دسته بندی ها -->
+                        <li class="dropdowns">
+                            <button class="dropbtn mb-2"> فروشگاه </button>
+                            <div class="dropdown-content">
+                                <a href="consoleCard.html">گیم های کنسول</a>
+                                <a href="steamGame.html"> گیم های استیم </a>
+                                <a href="giftCart.html"> گیفت کارت </a>
+                            </div>
+                        </li>
+
+                        <!-- ایجا دگزینه های صفحه اصلی و اخبار -->
+                        <li class="nav-item">
+                            <a class="nav-link d-none d-md-flex ms-3" href="#"> اخبار </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link d-none d-md-flex ms-3" href="index.html"> صفحه اصلی </a>
+                        </li>
+
+                        <!-- ایجاد ایکون سایت -->
+                        <li class="nav-item">
+                            <a href="index.html" class="navbar-brand d-none d-md-flex mb-md-2">
+                                <img src="images/gameShop-banner.png" alt="game brand" width="50px" height="45px">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>        
+        </nav>
+
+        <!-- مربوط به ایکون خرید و باز شن پنجره ی سبد خرید -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"> سبد خرید </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body text-start fw-bold fs-5">
+                سبد خرید شما خالی است
+            </div>
+        </div>
+
+        <section class="container-fluid" dir="rtl">
+            <div class="row">
+                <div class=" col-12 col-sm-2 user-items shadow">
+                    <ul class="user-info">
+                        <li class="user-li"> <a href="#"> اطلاعات کاربری </a> </li>
+                        <li class="user-li"> <a href="#"> در حال یادگیری </a> </li>
+                        <li class="user-li"> <a href="#">  پرداخت ها </a> </li>
+                        <li class="user-li"> <a href="#">  تیکت ها </a> </li>
+                        <li class="user-li"> <a href="#"> خروج از اکانت </a> </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-8 bg-light border user-profile shadow">
+                    <img src="images/mersad.jpg" class="images d-inline-block" alt="user-image">
+                    <h3 class="d-inline-block ms-2"> Mr Mersad </h3>
+                    <h6 class="ms-2 d-inline-block fs-5 text-muted"> (#1654829) </h6>
+                    <hr>
+                    <h5 class="userName d-inline-block"> نام کاربری: Mr Mersad </h5>
+                    <button type="button" class="btn btn-danger ms-2 border-none"> تغییر </button>
+                    <hr>
+                    <h5 class="userName"> ایمیل:mersad007.1380@gmail.com </h5>
+                </div>
+            </div>
+        </section>
+
+
+                <!-- فوتر و بخش پایانی سایت -->
+                <footer class="bg-dark bg-gradient text-dark pt-5 pb-4 mt-5">
+                    <div class="container-fluid text-center text-md-left">
+                        <div class="row text-center text-md-left">
+                            <div class="col-md-3 mx-auto mt-3">
+                                <h5 class="mb-4 font-wight-bold text-warning"> راه های ارتباطی </h5>
+                                <p>
+                                    <a class="text-white"> game.io@gmail.com:ایمیل </a>
+                                  </p>
+                                  <p>
+                                    <a class="text-white"> 09217045099:شماره تماس </a>
+                                  </p>
+                                  <p>
+                                    <a href="https://t.me/mersad_hossini" class="text-white mb-2"> <i class="fa fa-telegram ms-1" style="font-size: 20px;"></i> :تلگرام </a>
+                                  </p>
+                                  <p>
+                                    <a href="https://instagram.com/mersad__hosseini" class="text-white mb-2"> <i class="fa fa-instagram ms-1" style="font-size: 20px;"></i> :اینستاگرام </a>
+                                  </p>
+                            </div>
+                            <div class="col-md-3 mx-auto mt-3">
+                                <h4 class="mb-4 font-wight-bold text-warning"> ساعت کاری </h4>
+                                <p class="text-white"> تماس با پشتیبانی7 روز هفته / ساعت 11 الی 22</p>
+                                <p> <a href="#" class="info text-white"> فروش گیم های شما </a> </p>
+                            </div>
+                            <div class="col-md-3 mx-auto mt-3">
+                                <h4 class="mb-4 font-wight-bold text-warning"> دسترسی سریع </h4>
+                                <p> <a href="#" class="info text-white"> پشتیبانی </a> </p>
+                                <p> <a href="user-dasbord.html" class="info text-white"> ناحیه کاربری </a> </p>
+                                <p> <a href="#" class="info text-white"> تخفیفات ویژه </a> </p>
+        
+                            </div>
+                            <div class="col-md-3 mx-auto mt-3">
+                                <h4 class="mb-4 font-wight-bold text-warning"> Game.io وبسایت </h4>
+                                <p class="text-white"> با پشتیبانی سریع در خدمت شما دوستان عزیز میباشیم همچنین به مناسبت افتتاح سایت تمامی گیم های روز عرضه به مدت یک سال با 20% تخفیف میباشدند فقط کافیست برای گرفتن کد تخفیف وارد کانال تلگرام ما شوید </p>
+                            </div>
+                        </div>
+                        <hr class="text-white">
+                        <div class="row align-items-center justify-content-center">
+                          <div class="col-md-7 col-lg-8">
+                            <p class="text-white">
+                                .تمامی حقوق مادی و معنوی این سایت محفوظ می باشد
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                </footer>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

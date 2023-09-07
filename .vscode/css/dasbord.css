@@ -1,0 +1,63 @@
+body {
+    background-image: url("../images/game-shop.jpg");
+    background-attachment: fixed;
+}
+
+.user-items {
+    background-color: lueviolet;
+    margin-top: 160px;
+    min-width: 25%;
+    padding-right: 15px;
+    background-color: rgba(180, 172, 172, 0.8);
+    padding: 0px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.user-info {
+    list-style-type: none;
+}
+
+.user-info > .user-li {
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.user-info > .user-li > a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 8px 0px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+ .user-li > a:hover {
+    color: rgb(53, 43, 43);
+}
+
+.user-profile{
+    margin-right: 10px;
+    margin-top: 160px;
+}
+
+.images {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #dfdfdf;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.userName {
+    margin-top: 10px;
+}
+
+@media  (max-width:576px) {
+    .user-profile {
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+}
